@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Website HUT RI ke-81 SMK Negeri 1 Adiwerna">
+  <title>HUT RI ke-81 | SMK Negeri 1 Adiwerna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading"><div class="loader"></div><p>Menyiapkan Merah Putih...</p></div>
+  <nav class="nav">
+    <a class="brand" href="#home">🇮🇩 <span>RI<span class="red">81</span></span></a>
+    <button id="menuBtn" aria-label="Buka menu">☰</button>
+    <div class="links" id="navLinks">
+      <a href="#home">Beranda</a><a href="#nusantara">Nusantara</a><a href="#budaya">Budaya</a>
+      <a href="#peta">Peta</a><a href="#sejarah">Sejarah</a><a href="#quiz">Quiz</a>
+      <a href="#game">Game</a><a href="#twibbon">Twibbon</a><a href="#wishes">Harapan</a>
+      <a href="#leaderboard">Leaderboard</a><a href="#gallery">Galeri</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-bg"></div><div class="hero-glow"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">DIRGAHAYU REPUBLIK INDONESIA</p>
+      <h1>HUT RI <span>KE-81</span></h1>
+      <p class="lead">Semangat Kemerdekaan, Kreativitas, dan Persatuan<br><b>SMK NEGERI 1 ADIWERNA</b></p>
+      <div class="hero-actions"><a class="btn primary" href="#nusantara">Jelajahi Indonesia</a><button class="btn ghost" id="musicBtn">♫ Suasana Merdeka</button></div>
+    </div>
+    <div class="scroll">↓ Scroll untuk menjelajah</div>
+  </header>
+
+  <main>
+    <section class="stats section reveal">
+      <div><strong>17.000+</strong><span>Pulau</span></div><div><strong>38</strong><span>Provinsi</span></div>
+      <div><strong>700+</strong><span>Bahasa Daerah</span></div><div><strong>1</strong><span>Indonesia</span></div>
+    </section>
+
+    <section class="section intro reveal">
+      <p class="eyebrow">MERAYAKAN KEBERAGAMAN</p>
+      <h2>Indonesia, Rumah untuk Jutaan Cerita</h2>
+      <p>Dari Sabang sampai Merauke, setiap daerah membawa warna, tradisi, dan keajaiban yang menjadikan Indonesia begitu istimewa.</p>
+    </section>
+
+    <section id="nusantara" class="section">
+      <div class="section-head reveal"><p class="eyebrow">DESTINASI DUNIA</p><h2>Keajaiban Nusantara</h2></div>
+      <div class="cards">
+        <article class="place reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80" alt="Pura Bali"><div><span>BALI</span><h3>Pura & Pulau Dewata</h3><p>Pesona budaya, pura, dan lanskap tropis yang dikenal dunia.</p></div></article>
+        <article class="place reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1200&q=80" alt="Candi Borobudur"><div><span>JAWA TENGAH</span><h3>Candi Borobudur</h3><p>Mahakarya bersejarah dan salah satu ikon Indonesia.</p></div></article>
+        <article class="place reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80" alt="Gunung Indonesia"><div><span>NUSA TENGGARA</span><h3>Alam yang Dramatis</h3><p>Gunung, laut, dan bentang alam yang memukau.</p></div></article>
+        <article class="place reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80" alt="Raja Ampat"><div><span>PAPUA BARAT DAYA</span><h3>Raja Ampat</h3><p>Surga laut dengan keanekaragaman hayati luar biasa.</p></div></article>
+      </div>
+      <p class="source-note">Foto menggunakan gambar eksternal Unsplash agar repository tetap ringan dan halaman dapat memuat visual secara dinamis.</p>
+    </section>
+
+    <section id="budaya" class="section culture-wrap">
+      <div class="section-head reveal"><p class="eyebrow">WARISAN NUSANTARA</p><h2>Budaya dari Berbagai Daerah</h2></div>
+      <div class="culture-grid" id="cultureGrid"></div>
+    </section>
+
+    <section id="peta" class="section map-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">JELAJAHI NUSANTARA</p>
+        <h2>Peta Interaktif Indonesia</h2>
+        <p class="map-sub">Klik penanda pada peta untuk melihat budaya, makanan khas, dan rumah adat tiap wilayah.</p>
+      </div>
+      <div id="mapContainer" class="map-container reveal"></div>
+      <p class="source-note">Peta berupa ilustrasi jalur nusantara (bukan skala geografis akurat).</p>
+    </section>
+
+    <section id="sejarah" class="section history-section">
+      <div class="section-head reveal"><p class="eyebrow">JEJAK PERJUANGAN</p><h2>Timeline Kemerdekaan</h2></div>
+      <div class="history-list">
+        <details class="history-item reveal" open>
+          <summary><span class="h-year">1908</span> Kebangkitan Nasional</summary>
+          <p>Berdirinya Boedi Oetomo menjadi tonggak lahirnya kesadaran berorganisasi secara modern untuk memperjuangkan kemerdekaan.</p>
+        </details>
+        <details class="history-item reveal">
+          <summary><span class="h-year">1928</span> Sumpah Pemuda</summary>
+          <p>Para pemuda dari berbagai daerah bersatu mengikrarkan satu tanah air, satu bangsa, dan satu bahasa: Indonesia.</p>
+        </details>
+        <details class="history-item reveal">
+          <summary><span class="h-year">17 Agustus 1945</span> Proklamasi Kemerdekaan</summary>
+          <p>Soekarno-Hatta memproklamasikan kemerdekaan Indonesia, menandai lahirnya bangsa yang berdaulat.</p>
+        </details>
+        <details class="history-item reveal">
+          <summary><span class="h-year">1945–1949</span> Perang Mempertahankan Kemerdekaan</summary>
+          <p>Rakyat Indonesia berjuang mempertahankan kedaulatan melalui perlawanan fisik dan diplomasi di berbagai daerah.</p>
+        </details>
+        <details class="history-item reveal">
+          <summary><span class="h-year">27 Desember 1949</span> Pengakuan Kedaulatan</summary>
+          <p>Belanda secara resmi mengakui kedaulatan Indonesia dalam Konferensi Meja Bundar.</p>
+        </details>
+        <details class="history-item reveal">
+          <summary><span class="h-year">17 Agustus 1950</span> Kembali ke NKRI</summary>
+          <p>Indonesia kembali menjadi negara kesatuan setelah masa Republik Indonesia Serikat, memperkuat persatuan bangsa.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section timeline reveal">
+      <p class="eyebrow">PERJALANAN MENUJU PERAYAAN BERIKUTNYA</p>
+      <h2>Countdown HUT RI ke-82</h2>
+      <p class="count-sub">Menuju 17 Agustus 2027</p>
+      <div class="countdown" id="countdown"><div><b id="days">000</b><span>Hari</span></div><div><b id="hours">00</b><span>Jam</span></div><div><b id="minutes">00</b><span>Menit</span></div><div><b id="seconds">00</b><span>Detik</span></div></div>
+    </section>
+
+    <section id="quiz" class="section quiz-section reveal">
+      <div class="quiz-box">
+        <p class="eyebrow">UJI WAWASANMU</p><h2>Quiz Nusantara 🇮🇩</h2>
+        <div id="quizArea"></div>
+        <button class="btn primary" id="nextQuiz">Mulai Quiz</button>
+      </div>
+    </section>
+
+    <section id="game" class="section game-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">SERU-SERUAN</p>
+        <h2>Mini Game: Tangkap Bendera 🇮🇩</h2>
+        <p class="map-sub">Gerakkan keranjang dengan mouse/sentuh atau tombol ← → untuk menangkap bendera merah putih. Hindari bendera hitam!</p>
+      </div>
+      <div class="game-wrap">
+        <div class="game-hud">
+          <span>Skor: <b id="gameScore">0</b></span>
+          <span>Waktu: <b id="gameTime">30</b>s</span>
+          <button class="btn primary" id="gameStartBtn">Mulai Main</button>
+        </div>
+        <canvas id="gameCanvas" width="700" height="420"></canvas>
+        <div id="gameOverBox" class="game-over" hidden></div>
+      </div>
+    </section>
+
+    <section id="twibbon" class="section twibbon-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">BAGIKAN SEMANGATMU</p>
+        <h2>Twibbon Generator HUT RI ke-81</h2>
+        <p class="map-sub">Unggah foto, bingkai merah putih otomatis ditambahkan. Unduh dan bagikan ke media sosialmu!</p>
+      </div>
+      <div class="twibbon-wrap">
+        <canvas id="twibbonCanvas" width="600" height="600"></canvas>
+        <div class="twibbon-controls">
+          <input type="file" id="twibbonUpload" accept="image/*" hidden>
+          <button class="btn primary" id="twibbonChooseBtn">Pilih Foto</button>
+          <button class="btn ghost" id="twibbonDownloadBtn" disabled>Unduh Twibbon</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="wishes" class="section wishes-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">SUARA UNTUK NEGERI</p>
+        <h2>Wall of Wishes</h2>
+        <p class="map-sub">Tuliskan harapanmu untuk Indonesia. Tersimpan di perangkat/browser ini.</p>
+      </div>
+      <form id="wishForm" class="wish-form">
+        <input type="text" id="wishName" maxlength="30" placeholder="Nama kamu (opsional)">
+        <textarea id="wishText" maxlength="200" rows="3" placeholder="Tulis harapanmu untuk Indonesia..." required></textarea>
+        <button type="submit" class="btn primary">Kirim Harapan</button>
+      </form>
+      <div id="wishList" class="wish-list"></div>
+    </section>
+
+    <section id="leaderboard" class="section leaderboard-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">PAPAN PERINGKAT</p>
+        <h2>Leaderboard</h2>
+        <p class="map-sub">Skor tersimpan di perangkat/browser ini.</p>
+      </div>
+      <div class="leaderboard-tabs">
+        <button class="lb-tab active" data-lb="quiz">Quiz Nusantara</button>
+        <button class="lb-tab" data-lb="game">Tangkap Bendera</button>
+      </div>
+      <ol id="leaderboardList" class="leaderboard-list"></ol>
+    </section>
+
+    <section id="gallery" class="section gallery reveal">
+      <div class="section-head"><p class="eyebrow">SEMANGAT KEMERDEKAAN</p><h2>Merah Putih dalam Satu Bingkai</h2></div>
+      <div class="mosaic">
+        <div class="mosaic-card">🇮🇩<span>Persatuan</span></div><div class="mosaic-card">🏫<span>SMK Bisa!</span></div>
+        <div class="mosaic-card">🎭<span>Budaya</span></div><div class="mosaic-card">✨<span>Masa Depan</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="flag"></div><h3>SMK NEGERI 1 ADIWERNA</h3><p>HUT REPUBLIK INDONESIA KE-81 • 2026</p><small>Dibuat dengan ❤️ untuk semangat Indonesia.</small></footer>
+  <button id="topBtn" aria-label="Kembali ke atas">↑</button>
+
+  <div id="mapModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="mapModalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="mapModalClose" aria-label="Tutup">✕</button>
+      <div id="mapModalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="features.js"></script>
+</body>
+</html>
